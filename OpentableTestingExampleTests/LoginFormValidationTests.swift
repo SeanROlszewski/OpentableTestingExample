@@ -2,7 +2,6 @@ import XCTest
 @testable import OpentableTestingExample
 
 class LoginFormValidationTests: XCTestCase {
-    
     func testItAcceptsWellformedEmailAddressesAndPasswords() {
         XCTFail("Write the test you think should go here, then make it pass.")
     }

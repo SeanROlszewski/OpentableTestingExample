@@ -16,7 +16,6 @@
 		9D47F4712103A5120015DE8E /* OpentableTestingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47F4702103A5120015DE8E /* OpentableTestingExampleUITests.swift */; };
 		9D47F47F2103EB410015DE8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47F47E2103EB410015DE8E /* LoginViewController.swift */; };
 		9D47F4812103EB6C0015DE8E /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47F4802103EB6C0015DE8E /* LoginViewControllerTests.swift */; };
-		9DECB5352105239400F47662 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECB5342105239400F47662 /* HttpClient.swift */; };
 		9DECB53721052D4800F47662 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECB53621052D4800F47662 /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		9D47F4722103A5120015DE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D47F47E2103EB410015DE8E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D47F4802103EB6C0015DE8E /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
-		9DECB5342105239400F47662 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		9DECB53621052D4800F47662 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 		9D47F44F2103A5110015DE8E /* OpentableTestingExample */ = {
 			isa = PBXGroup;
 			children = (
-				9DECB5342105239400F47662 /* HttpClient.swift */,
 				9D47F47E2103EB410015DE8E /* LoginViewController.swift */,
 				9DECB53621052D4800F47662 /* RestaurantListViewController.swift */,
 				9D47F4502103A5110015DE8E /* AppDelegate.swift */,
@@ -270,7 +267,6 @@
 			files = (
 				9D47F47F2103EB410015DE8E /* LoginViewController.swift in Sources */,
 				9DECB53721052D4800F47662 /* RestaurantListViewController.swift in Sources */,
-				9DECB5352105239400F47662 /* HttpClient.swift in Sources */,
 				9D47F4512103A5110015DE8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
