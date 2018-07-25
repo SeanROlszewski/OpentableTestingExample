@@ -27,7 +27,7 @@ There are a few ways to write this function - think simply! We're only intereste
 
 Once you've gotten the validation logic working, you'll need to add the functionality to the `LoginViewController`. Some boilerplate has been set up for you to make it easy to test your view controller - check out the `LoginViewControllerTests` file.
 
-You'll need to be comfortable with **[UIControlEvents](https://developer.apple.com/documentation/uikit/uicontrol/event)** to effectively test the validation logic inside the view controller. Use `UIControlEvents` to simulate a user entering text, and ensure that the `submitButton` on the `LoginViewController` changes from being disabled to enabled once an email and password are provided. The tests that you write should capture all the states that are possible: 
+You'll need to be comfortable with **[UIControlEvents](https://developer.appgitle.com/documentation/uikit/uicontrol/event)** to effectively test the validation logic inside the view controller. Use `UIControlEvents` to simulate a user entering text, and ensure that the `submitButton` on the `LoginViewController` changes from being disabled to enabled once an email and password are provided. The tests that you write should capture all the states that are possible: 
 
 * Both fields are empty
 * One field has text while the other is empty
