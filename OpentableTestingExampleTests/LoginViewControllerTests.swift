@@ -33,6 +33,30 @@ class LoginViewControllerTests: XCTestCase {
     }
     
     func testItEnablesTheLoginButtonWithACompleteEmailAndPassword() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        loginViewController.emailTextField.text = "me@me.me"
+        loginViewController.textFieldDidEndEditing(loginViewController.emailTextField)
+
+        var isEnabled = loginViewController.submitButton.isEnabled
+
+        XCTAssertFalse(isEnabled)
+
+        loginViewController.passwordTextField.text = "password"
+        loginViewController.textFieldDidEndEditing(loginViewController.passwordTextField)
+
+        isEnabled = loginViewController.submitButton.isEnabled
+
+        XCTAssertTrue(isEnabled)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

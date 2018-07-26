@@ -1,25 +1,51 @@
 import XCTest
 @testable import OpentableTestingExample
 
+
 class LoginFormValidationTests: XCTestCase {
     func testItAcceptsWellformedEmailAddressesAndPasswords() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        let testEmail = "me@me.me"
+        let testPassword = "password"
+
+        let actual = isValid(email: testEmail, password: testPassword)
+
+        XCTAssertTrue(actual)
     }
     
     func testItRejectsEmptyEmailAddresses() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        let testEmail = ""
+        let testPassword = "password"
+
+        let actual = isValid(email: testEmail, password: testPassword)
+
+        XCTAssertFalse(actual)
     }
     
     func testItRejectsEmptyPasswords() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        let testEmail = "me@me.me"
+        let testPassword = ""
+
+        let actual = isValid(email: testEmail, password: testPassword)
+
+        XCTAssertFalse(actual)
     }
 
     
     func testItRejectsPoorlyFormedEmailAddresses() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        let testEmail = "me me me"
+        let testPassword = "password"
+
+        let actual = isValid(email: testEmail, password: testPassword)
+
+        XCTAssertFalse(actual)
     }
     
     func testItRejectsPasswordsShorterThan8Characters() {
-        XCTFail("Write the test you think should go here, then make it pass.")
+        let testEmail = "me@me.me"
+        let testPassword = "pass"
+
+        let actual = isValid(email: testEmail, password: testPassword)
+
+        XCTAssertFalse(actual)
     }
 }
